@@ -1,5 +1,60 @@
-body{
+$verde: #8FBCB3;
+$cinza-claro: #DFE6ED;
+$cinza-medio: #C3CFD9;
+$cinza-escuro: #788895;
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   height: 100vh;
   background-color: bisque;
+  background-color: $verde;
+}
+
+
+#caixa-cadastro {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px $cinza-escuro;
+  background-color: $cinza-claro;
+  width: 200px;
+  padding: 15px;
+  gap: 12px;
+
+  >* {
+    border-radius: 3px;
+    padding: 10px;
+  }
+
+  input {
+    border: solid 1px $cinza-escuro;
+  }
+
+  span {
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  span,
+  #resultado{
+    text-align: center;
+  }
+
+  #resultado {
+    border: solid 1px black;
+    font-family:'Times New Roman', Times, serif
+
+  }
+
+  #cadastrar {
+    border: 0px;
+    background-color: $cinza-escuro;
+    font-size: 1em;
+    color: whitesmoke;
+    font-family:'Times New Roman', Times, serif
+
+  }
 }
