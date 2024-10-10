@@ -1,60 +1,76 @@
-$verde: #8FBCB3;
-$cinza-claro: #DFE6ED;
-$cinza-medio: #C3CFD9;
-$cinza-escuro: #788895;
+@import "./src/assets/_resets.scss";
+@import "./src/assets/cores";
+@import "./src/assets/mixins";
 
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  height: 100vh;
-  background-color: bisque;
-  background-color: $verde;
-}
-
-
-#caixa-cadastro {
-  display: flex;
-  flex-direction: column;
-  border: solid 1px $cinza-escuro;
-  background-color: $cinza-claro;
-  width: 200px;
-  padding: 15px;
-  gap: 12px;
-
-  >* {
-    border-radius: 3px;
-    padding: 10px;
-  }
-
-  input {
-    border: solid 1px $cinza-escuro;
-  }
-
+.cabecalho {
+  @include displayFlex(row, 0px, space-between);
+  padding: 20px;
   span {
     font-size: 2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  }
-  span,
-  #resultado{
-    text-align: center;
+    color: black;
   }
   
+  &__nav{
+    display: flex;
+    
+    a{
+      margin: 5px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      padding: 10px 15px;
+      background-color: rgb(70, 70, 241);
+      color: whitesmoke;
+      text-decoration: none;
+      text-transform: none;
 
-  #resultado {
-    border: solid 1px black;
-    font-family:'Times New Roman', Times, serif
+    }
+  }
+}
+
+main {
+  @include displayFlex(row, 12px, center);
+
+
+
+  .caixa-cadastro {
+    @include displayFlex(column, 12px, center);
+    border: solid 1px $cinza-escuro;
+    background-color: $cinza-claro;
+    width: 200px;
+    padding: 15px;
+
+    >* {
+      border-radius: 3px;
+      padding: 10px;
+
+    }
+
+    &__span {
+      font-size: 2em;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    &__input {
+      border: solid 1px $cinza-escuro;
+    }
+
+    &__btn {
+      @include fontAndColor('Times New Roman', whitesmoke);
+      border: 0px;
+      background-color: $cinza-escuro;
+      font-size: 1em;
+
+    }
+
+    &__resultado {
+      @include fontAndColor('Times New Roman', whitesmoke);
+      text-align: center;
+      background-color: $sucesso;
+
+    }
+
 
   }
 
-  #cadastrar {
-    border: 0px;
-    background-color: $cinza-escuro;
-    font-size: 1em;
-    color: whitesmoke;
-    font-family:'Times New Roman', Times, serif
-
-  }
 }

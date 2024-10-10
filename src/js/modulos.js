@@ -11,8 +11,9 @@ export function pegaInputCadastro(id){
     return resultado
 }
 
+
 export async function chamadaAPI(url,titulo, descricao){
-    const response = await fetch(url,  {
+    const settings =  {
         method: "POST",
         headers: {
             "Content-Type" : "application/json"
@@ -21,7 +22,10 @@ export async function chamadaAPI(url,titulo, descricao){
             title: titulo,
             description: descricao
         })
-    } )
+} 
+
+    const response = await fetch(url,settings)
     const Response = response.json()
+    return Response
     
 }

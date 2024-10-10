@@ -1,37 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto PRO</title>
-  </head>
-  <body>
-    <!-- <a href="cadastro.html">Página de cadastro</a> -->
 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto PRO</title>
+</head>
 
+<body>
+  <header class="cabecalho">
+    <span>Página do Cliente</span>
+    <div class="cabecalho__nav">
+      <a href="listaLivros.html">Lista</a>
+      <a href="index.html">Gerencia</a>
+    </div>
+  </header>
+  <main>
+    <div class="caixa-cadastro">
+      <span class="caixa-cadastro__span">Novo Livro</span>
+      <input type="text" id="titulo" class="caixa-cadastro__input" placeholder="Título">
+      <input type="text" id="descricao" class="caixa-cadastro__input" placeholder="Descrição">
+      <button id="cadastrar" class="caixa-cadastro__btn">Cadastrar</button>
+      <div id="resultado" class="caixa-cadastro__resultado">SUCESSO!</div>
+    </div>
 
-    <main>
-      <div id="caixa-cadastro">
-        <span>Novo Livro</span>
-        <input type="text" id="titulo" placeholder="Título">
-        <input type="text" id="descricao" placeholder="Descrição">
-        <button id="cadastrar">Cadastrar</button>
-        <div id="resultado">SUCESSO!</div>
-      </div>
-      
-    </main>
+  </main>
 
+  <script type="module" src="/main.js"></script>
+</body>
 
-
-
-
-
-
-
-
-
-
-    <script type="module" src="/main.js"></script>
-  </body>
 </html>

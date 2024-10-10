@@ -17,3 +17,10 @@ npm install
 ```bash
 npm run dev
 ```
+
+
+<!-- TODO -->
+<!-- 1 - Criar layout da listaLivros.html
+2 - colocar a chamada GET da api de livros adicionando na lista
+3 - colocar o loading
+4 - deixar o botao Sucesso como display none, e ao enviar pra api, um loading pequeno, e depois o botao sucesso ou erro aparece -->

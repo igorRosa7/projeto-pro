@@ -1,0 +1,11 @@
+@import "_mixins.scss";
+@import "_cores.scss";
+
+body {
+    @include displayFlex(column, 20px, flex-start);
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: $verde;
+  }
+  
