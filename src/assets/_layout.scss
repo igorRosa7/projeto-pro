@@ -1,0 +1,29 @@
+main {
+    @include displayFlex(row, 12px, center);
+}
+
+
+.cabecalho {
+    @include displayFlex(row, 0px, space-between);
+    padding: 20px;
+
+    span {
+        font-size: 2em;
+        color: black;
+    }
+
+    &__nav {
+        display: flex;
+
+        &__items {
+            margin: 5px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            padding: 10px 15px;
+            background-color: rgb(70, 70, 241);
+            color: whitesmoke;
+            text-decoration: none;
+            text-transform: none;
+        }
+    }
+}

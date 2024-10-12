@@ -1,4 +1,4 @@
-import './style.scss'
+import './src/assets/index.scss'
 import { iniciaEvento, URL_API_LIVROS, pegaInputCadastro, chamadaAPI} from './src/js/modulos'
 
 iniciaEvento("cadastrar", "click", iniciaCadastro)

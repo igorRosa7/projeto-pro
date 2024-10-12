@@ -1,0 +1,40 @@
+@import "./src/assets/_resets.scss";
+@import "./src/assets/cores";
+@import "./src/assets/mixins";
+@import "./layout.scss";
+
+.caixa-principal{
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    background-color: $cinza-claro;
+    padding: 30px;
+    width: 100%;
+    margin: 10px;
+    &__tabela{
+        table{
+            background-color: whitesmoke;
+            width: 100%;
+            td, th {
+                padding: 5px;
+            }
+            thead{
+                background-color: $cinza-escuro;
+            }
+            tbody{
+            tr:nth-child(even){
+                background-color: $cinza-medio;
+            }
+        }
+            
+        }
+    }
+    input{
+        width: fit-content;
+        padding: 10px;
+    }
+    &__cabecalho{
+        display: flex;
+    }
+
+}

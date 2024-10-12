@@ -1,37 +1,22 @@
 @import "./src/assets/_resets.scss";
 @import "./src/assets/cores";
 @import "./src/assets/mixins";
+@import "./layout.scss";
 
-.cabecalho {
-  @include displayFlex(row, 0px, space-between);
-  padding: 20px;
-  span {
-    font-size: 2em;
-    color: black;
-  }
-  
-  &__nav{
-    display: flex;
-    
-    a{
-      margin: 5px;
-      font-size: 1.2em;
-      border-radius: 5px;
-      padding: 10px 15px;
-      background-color: rgb(70, 70, 241);
-      color: whitesmoke;
-      text-decoration: none;
-      text-transform: none;
 
-    }
+.cabecalho__nav {
+  a {
+    margin: 5px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: rgb(70, 70, 241);
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: none;
+
   }
 }
-
-main {
-  @include displayFlex(row, 12px, center);
-
-
-
   .caixa-cadastro {
     @include displayFlex(column, 12px, center);
     border: solid 1px $cinza-escuro;
@@ -73,4 +58,3 @@ main {
 
   }
 
-}
