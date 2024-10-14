@@ -7,9 +7,22 @@ iniciaEvento("input-busca", "keyup", iniciarBusca)
 
 let livros = []
 
+function delay(ms){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+           resolve()
+       }, ms);
+
+
+    })
+}
+
 async function iniciarProcesso(){
-    livros = await chamadaGET(URL_API_LIVROS)
-    construirTabelaComLivros(livros)
+  document.getElementById("loading").style.display = "block"
+  await delay(3000)
+  livros = await chamadaGET(URL_API_LIVROS)
+  construirTabelaComLivros(livros)
+  document.getElementById("loading").style.display = "none"
     
 }
 
