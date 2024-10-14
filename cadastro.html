@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto PRO</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <span>Página do Gerente</span>
+    <div class="cabecalho__nav">
+      <a href="index.html" class="cabecalho__nav__items">Lista</a>
+      <a href="cadastro.html" class="cabecalho__nav__items">Gerencia</a>
+    </div>
+  </header>
+  <main>
+    <div class="caixa-cadastro">
+      <span class="caixa-cadastro__span">Novo Livro</span>
+      <input type="text" id="titulo" class="caixa-cadastro__input" placeholder="Título">
+      <input type="text" id="descricao" class="caixa-cadastro__input" placeholder="Descrição">
+      <button id="cadastrar" class="caixa-cadastro__btn">Cadastrar</button>
+      <div id="resultado" class="caixa-cadastro__resultado">SUCESSO!</div>
+    </div>
+
+  </main>
+
+  <script type="module" src="/cadastro.js"></script>
+</body>
+
+</html>
