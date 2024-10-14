@@ -51,7 +51,7 @@
     &__resultado {
       @include fontAndColor('Times New Roman', whitesmoke);
       text-align: center;
-      background-color: $sucesso;
+      display: none;
 
     }
 
