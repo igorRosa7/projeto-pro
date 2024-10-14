@@ -17,40 +17,22 @@
     </header>
 
     <main>
+        <button id="oi">oi</button>
         <div class="caixa-principal">
             <div class="caixa-principal__cabecalho">
             <h2>Lista de Livros</h2>
-        </div>
             <input type="text" placeholder="Buscar"></input>
+        </div>
             <div class="caixa-principal__tabela">
-                <table border="1">
+                <table border="1" id="tabela-livros">
                     <thead>
                         <tr>
+                            <th align=left>ID</th>
                             <th align=left>Título</th>
                             <th align=left>Descrição</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Código Limpo</td>
-                            <td>Habilidades práticas do Agile Software</td>
-                        </tr>
-                        <tr>
-                            <td>SOLID para ninjas</td>
-                            <td>Projetando classes flexíveis</td>
-                        </tr>
-                        <tr>
-                            <td>Clean Arc</td>
-                            <td>O guia do artesão</td>
-                        </tr>
-                        <tr>
-                            <td>Domain Drive Design</td>
-                            <td>Implementando DDD</td>
-                        </tr>
-                        <tr>
-                            <td>O codificador limpo</td>
-                            <td>Código de conduta</td>
-                        </tr>
+                    <tbody id="tabela-livros__tbody">
                     </tbody>
                 </table>
 
