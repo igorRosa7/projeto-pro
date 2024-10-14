@@ -10,6 +10,8 @@
     background-color: $cinza-claro;
     padding: 15px 30px 30px 30px;
     width: 80%;
+    max-height: 400px;
+    overflow-y: auto;
     &__tabela{
         table{
             background-color: whitesmoke;
@@ -40,6 +42,10 @@
         border-radius: 3px;
         border: solid 1px $cinza-escuro;
     }
+    // input:focus-visible{
+    //     outline: none;
+    // }
+
     &__cabecalho{
         display: flex;
         justify-content: space-between;
